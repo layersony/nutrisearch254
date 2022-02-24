@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Shizuru&family=Slabo+27px&display=swap');
+
+body{
+  background: #0700a81f;
+  font-family: 'Slabo 27px', serif;
+  font-size: 19px;
+}
+nav{
+  background: #282424;
+}
+nav .brand-logo{
+  font-family: 'Abel', sans-serif;
+}
+nav .logo254{
+  font-family: 'Shizuru', cursive;
+}
+.nbTopic{
+  font-weight: 500;
+}
+.content{
+  font-weight: 800;
+  font-size:21px;
+}
