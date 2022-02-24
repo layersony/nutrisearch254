@@ -20,9 +20,9 @@ def foodResults(searchquery):
   try:
     fd_Result = get_details(searchquery)
   except HTTPError:
-    fd_Result = f'{searchquery} Not in Out DataBase'
-  print(searchquery)
-  return render_template('results.html', fd_Result=fd_Result)
+    fd_Result = None
+    pass
+  return render_template('results.html', searchquery=searchquery,fd_Result=fd_Result)
 
 # 
 manager = Manager(app)
