@@ -1,5 +1,11 @@
-from flask import Flask
+from flask import Flask, render_template, request, redirect, url_for
 from flask_script import Manager, Server
+app = Flask(__name__)
+
+# view function
+@app.route('/')
+def index():
+  return render_template('index.html')
 
 # Server
 manager = Manager(app)
