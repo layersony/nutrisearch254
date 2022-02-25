@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="themain d-flex justify-content-center flex-column align-items-center">
+  <div class='text-center'>
+    <h3>NutriSearch 254 <sup>1.0</sup> </h3>
+    <p>Know the Amount of Nutrients in the Foods you Intake</p>
+  </div>
+  <div>
+    <form id='searchForm' class='p-sm-2 p-md-4'>    
+  
+      <div class="row">
+        <div class="input-field col s12">
+          <input name='searchquery' id="searchquery" type="text" class="validate">
+          <label class="active" for="searchquery">Search Food</label>
+        </div>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn btn-sm">
+          <span id="toSearch">Search</span>
+          <div id="loadin" style='display:none'>
+            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            <span>Loading...</span>
+          </div>
+        </button>
+      </div>
+      <sub>eg: Chapati, egg, etc....</sub>
+    </form>
+  </div>
+
+  <div id="savedFoods" class='d-flex justify-content-start flex-column mt-5 p-2' >
+    <h5>Interested Saved Foods List</h5>
+    <hr>
+    <ul id="displayFood">
+
+    </ul>
+  </div>
+</div>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$('#toSearch').on('click', ()=>{
+    $('#toSearch').toggle();
+    $('#loadin').toggle();
+})
+</script>
+{% endblock content %}
