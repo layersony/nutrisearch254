@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Shizuru&family=Slabo+27px&display=swap');
+
+body{
+  background: #0700a81f;
+  /* background-image: linear-gradient(to left, rgb(0 0 0 / 35%) 30%, rgb(0 0 0 / 35%) 70%), url(/static/images/bg.jpg); */
+  font-family: 'Slabo 27px', serif;
+  font-size: 19px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.main-container, .themain{
+  min-height: 50vh;
+}
+nav{
+  background: #282424;
+}
+nav .brand-logo{
+  font-family: 'Abel', sans-serif;
+}
+nav .logo254{
+  font-family: 'Shizuru', cursive;
+}
+.nbTopic{
+  font-weight: 500;
+}
+.content{
+  font-weight: 800;
+  font-size:21px;
+}
+#searchForm{
+  width: 50vw;
+  min-width: 330px;
+  /* background-color: #00000094; */
+  border-radius: 3px ;
+}
+input{
+  font-size: 23px;
+}
+#savedFoods{
+  width: 50vw;
+  min-width: 330px;
+  background-color: #ffffff;
+  border-radius: 8px ;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+#displayFood{
+  list-style-type:disc;
+}
+.disFoodLi{
+  padding: 10px;
+}
+.input-field>label {
+  font-size: 1.5rem;
+}
