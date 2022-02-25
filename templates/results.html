@@ -43,11 +43,11 @@
         </ul>
       {% endfor %}
     </div>
-    <button class="btn waves-effect waves-light btn-lg w-100"><i class="fa-thin fa-chevrons-left"></i> Search Again</button>
+    <a href="{{url_for( 'index')}}"><button class="btn waves-effect waves-light btn-lg w-100"><i class="fa-thin fa-chevrons-left"></i> Search Again</button></a>
 
   {% else %}
     <p> <span class='font-bold'>{{searchquery}}</span> is Not Available in Our Database</p>
-    <button class="btn waves-effect waves-light m-4">Search Again</button>
+    <a href="{{url_for( 'index')}}"><button class="btn waves-effect waves-light m-4" >Search Again</button></a>
   {% endif %}
   </div>
 {% endblock content %}

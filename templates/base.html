@@ -19,7 +19,7 @@
   <nav>
     <div class="container">
       <div class="nav-wrapper">
-        <a href="#" class="brand-logo">NutriSearch<span class='text-warning logo254'>254</span></a>
+        <a href="{{url_for( 'index')}}" class="brand-logo">NutriSearch<span class='text-warning logo254'>254</span></a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a href=""></a></li>
         </ul>
@@ -27,7 +27,7 @@
     </div>
   </nav>
 
-  <div class="container mt-3">
+  <div class="container mt-3 main-container">
     {% block content %}
     {% endblock content %}
   </div>
