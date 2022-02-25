@@ -13,7 +13,7 @@
 + [Authors Info](#author-Info)
 
 ## Description
-<p>This is  a website that Provides nutritional information about the foods We eat. All you have to do is Enter the name of the Food and it wil provide information</p>
+<p>This is  a website that Provides nutritional information about the foods We eat. All you have to do is Enter the name of the Food and it will provide information. One is able to save their Interested food and can delete if no longer interested</p>
 
 ## Installation
 
@@ -39,6 +39,8 @@
 * Materialize CSS
 
 * Bootstrap CSS
+
+* Nutritionix API
 
 [Go Back to the top](#NutriSearch)
 
