@@ -47,14 +47,14 @@
       {% endfor %}
     </div>
     <div class="d-flex justify-content-around align-items-center">
-      <a href="{{url_for( 'index')}}"><button class="btn waves-effect waves-light btn-lg"><i class="fa-thin fa-chevrons-left"></i> Search Again</button></a>
+      <a href="{{url_for( 'index')}}"><button class="btn waves-effect waves-light btn-lg"><i class="fa-thin fa-chevrons-left"></i> Search Another Food </button></a>
       <button class="btn waves-effect waves-light btn-lg btn-success" id='savefd'> Save Food </button>
     </div>
 
   {% else %}
   <div class="mt-5">
     <p> <span class='text-danger'>{{searchquery}}</span> is Not Available in Our Database</p>
-    <a href="{{url_for( 'index')}}"><button class="btn waves-effect waves-light m-4" >Search Again</button></a>
+    <a href="{{url_for( 'index')}}"><button class="btn waves-effect waves-light m-4" >Search Another Food</button></a>
   </div>
   {% endif %}
   </div>
